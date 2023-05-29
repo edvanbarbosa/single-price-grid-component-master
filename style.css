@@ -15,7 +15,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  hsl(204, 43%, 93%);
+    background-color:  hsl(203, 31%, 80%);
 }
 main{
     display: grid;
@@ -80,7 +80,7 @@ h1{
 button{
    margin-top: 2em;
     width: 82%;
-    height: 30%;
+    height: 22%;
     border-radius: 8px;
     border: none;
     color: #fff;
@@ -90,6 +90,7 @@ button{
     font-size: 1em;
     box-shadow: 0px 0px 5px .3px #00000025;
     transition: .4s ease-in-out;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.229);
 }
 button:hover{
     color: hsl(71, 73%, 54%);
@@ -117,4 +118,54 @@ button:hover{
     font-size: .9em;
     line-height: 1.5em;
     color: #ffffff9a;
+}
+
+@media screen and (max-width:1350px) {
+    main{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1096px) {
+    main{
+        width: 60%;
+    }
+}
+@media screen and (max-width:910px) {
+    main{
+        width: 70%;
+    }
+}
+@media screen and (max-width:792px) {
+    main{
+        width: 80%;
+    }
+}
+@media screen and (max-width:690px) {
+    main{
+        width: 90%;
+    }
+}
+@media screen and (max-width:610px) {
+    body{
+        height: auto;
+        padding: 1em;
+        overflow-x: hidden;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+    }
+    .buy-division{
+        border-radius: 0px;
+
+    }
+    .why-us-division{
+        border-bottom-left-radius: 10px;
+    }
+    button{
+       padding: .5em;
+    }
 }
